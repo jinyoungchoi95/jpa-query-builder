@@ -8,6 +8,9 @@ import java.util.stream.Collectors;
 
 import static com.google.common.base.Preconditions.checkNotNull;
 
+/**
+ * @see org.hibernate.sql.SimpleSelect
+ */
 public class Select {
     private final String tableName;
     private final List<String> columns;

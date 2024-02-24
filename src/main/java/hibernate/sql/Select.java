@@ -49,7 +49,8 @@ public class Select {
     }
 
     private void applySelectClause(StringBuilder sqlBuffer) {
-        sqlBuffer.append("select ").append(parseColumns());
+        sqlBuffer.append("select ")
+                .append(parseColumns());
     }
 
     private String parseColumns() {
@@ -68,11 +69,13 @@ public class Select {
     }
 
     private void applyFromClause(StringBuilder sqlBuffer) {
-        sqlBuffer.append(" from ").append(tableName);
+        sqlBuffer.append(" from ")
+                .append(tableName);
     }
 
     private void applyWhereClause(StringBuilder sqlBuffer) {
-        sqlBuffer.append(" where ").append(parseRestriction());
+        sqlBuffer.append(" where ")
+                .append(parseRestriction());
     }
 
     private String parseRestriction() {
